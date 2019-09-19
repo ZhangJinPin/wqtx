@@ -1,0 +1,334 @@
+body{
+	background: url(../images/firearms/bg.jpg) no-repeat center;
+	background-attachment: fixed;
+}
+.center {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.items {
+	padding: 60px 0;
+	overflow: hidden;
+}
+
+.transition {
+	transition: all .3s ease;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.items-mobile {
+	background: url(../images/firearms/bg.jpg) no-repeat center;
+}
+
+.items-mobile .center {
+	height: 560px;
+}
+
+.items-mobile .main-title {
+	color: rgb(7, 1, 1);
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: bolder;
+	font-family: "宋体";
+}
+
+.items-mobile .item {
+	position: absolute;
+	width: 242px;
+	height: 505px;
+	bottom: 0;
+	perspective: 600px;
+}
+
+.items-mobile .item .box {
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	background: url(../images/firearms/timg\ \(1\).jpg) no-repeat center/100%;
+	position: relative;
+}
+
+.items-mobile .item:hover .box {
+	transform: rotateY(0) skew(0, 0) scale(1);
+}
+
+.items-mobile .item .box:before {
+	content: "";
+	position: absolute;
+	width: 202px;
+	height: 360px;
+	box-sizing: border-box;
+	/* background-color: #F2F2F2; */
+	z-index: -1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.items-mobile .item-1 {
+	left: 128px;
+}
+
+.items-mobile .item-1 .box {
+	transform: rotateY(40deg) skew(0deg, 10.5deg) scale(0.8);
+}
+
+.items-mobile .item-2 {
+	left: 371px;
+}
+
+.items-mobile .item-2 .box {
+	transform: rotateY(40deg) skew(0deg, 10.5deg) scale(0.8);
+}
+
+.items-mobile .item-3 {
+	right: 371px;
+}
+
+.items-mobile .item-3 .box {
+	transform: rotateY(-40deg) skew(0deg, -10.5deg) scale(0.8);
+}
+
+.items-mobile .item-4 {
+	right: 128px;
+}
+
+.items-mobile .item-4 .box {
+	transform: rotateY(-40deg) skew(0deg, -10.5deg) scale(0.8);
+}
+
+.items-mobile .item-title {
+	font-size: 26px;
+	margin-bottom: 10px;
+	position: relative;
+	color: rgb(248, 247, 247);
+}
+
+.items-mobile .img-block {
+	width: 70px;
+	margin: 20px auto;
+	display: block;
+}
+
+.items-mobile .img-block img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.items-mobile .img-block img:hover{
+	transform: scale(2)
+}
+.items-mobile .item-p {
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
+	color: #f7f2f2;
+    font-weight: bolder;
+}
+
+.items-mobile .item-btn {
+	width: 60%;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	position: relative;
+}
+
+.items-mobile .item-btn-a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color:#a2a7bd;
+	color: #fff;
+}
+
+.items-mobile .item-btn-a:hover {
+	background-color:#474a56;
+}
+
+
+/* 图片滚动 */
+a,img{
+	border:0;
+}
+table{
+	
+	empty-cells:show;
+	border-collapse:collapse;
+	border-spacing:0;
+
+}
+.titbox{
+	font-size:18px;
+	color:#3366cc;
+	height:32px;
+	overflow:hidden;
+	width:880px;
+	margin:20px auto;
+}
+.scroll{
+	border-radius: 0.7rem;
+	width:880px;
+	color:#333333;
+	margin:0 auto;
+	overflow:hidden;}
+.scroll img{
+	margin:0 5px;
+}
+.scroll a:hover img{
+	transform: scale(1.2);
+}
+/* 武器图片布局 */
+.pro_recommend {
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.pro_recommend h2 {
+	font-size: 24px;
+	color: #555;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 50px;
+    padding-bottom: 20px;
+    background: #f3efef;
+}
+
+.pro_recommend ul {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #fff;
+}
+.pro_recommend ul:before {
+	display: block;
+	content: "";
+	clear: both;
+}
+.pro_recommend ul li {
+	float: left;
+	color: white;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease 0s;
+	width: 320px;
+	height: 200px;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.pro_recommend ul li:first-child {
+	border: none;
+	width: 279px;
+	height: 440px;
+	border-right: 1px solid #ebebeb;
+}
+
+.pro_recommend ul li:nth-child(2) {
+	float: right;
+	border: none;
+	width: 280px;
+	height: 440px;
+}
+
+.pro_recommend ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.pro_recommend ul li img {
+	position: absolute;
+    width: 235px;
+    height: 132px;
+    bottom: 33px;
+    right: -40px;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+}
+.pro_recommend ul li .item-imgs {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    bottom: 38;
+    left: -40px;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+}
+.pro_recommend ul li:first-child img {
+	width: 240px;
+	height: 240px;
+}
+
+.pro_recommend ul li:nth-child(2) img {
+	width: 240px;
+	height: 240px;
+}
+
+.pro_recommend ul li .item-text {
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+.pro_recommend ul li .item-texts {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+.pro_recommend ul li .item-texts strong,
+.pro_recommend ul li .item-text strong {
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.pro_recommend ul li .item-texts p,
+.pro_recommend ul li .item-text p {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.pro_recommend ul li .item-texts span a,
+.pro_recommend ul li .item-texts span,
+.pro_recommend ul li .item-text span {
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #fc6451;
+	color: #fc6451;
+	font-size: 14px;
+	padding: 0 20px;
+	border-radius: 2px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+}
+
+
+.pro_recommend ul li a:hover .item-img {
+	right: -20px;
+}
+.pro_recommend ul li a:hover .item-imgs{
+	left: -20px;
+}
+.pro_recommend ul li a:hover .item-text span a,
+.pro_recommend ul li a:hover .item-text span {
+	background: #fc6451;
+	color: #fff;
+}
+.pro_recommend ul li a:hover .item-texts span a,
+.pro_recommend ul li a:hover .item-texts span {
+	background: #fc6451;
+	color: #fff;
+}

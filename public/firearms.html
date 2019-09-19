@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>枪械与单兵</title>
+	<link rel="stylesheet" type="text/css" href="css/firearms_style.css" />
+	<link rel="stylesheet" href="css/header.css">
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<header id="header">
+		<nav class="nav">
+			<ul class="fl">
+				<li>
+					<a href="index.html">
+						<img src="images/logo.png" style="width: 60px;height:60px;">
+					</a>
+				</li>
+				<li><a href="index.html" class="nav-item">首页</a></li>
+				<li><a href="aerocraft.html" class="nav-item">飞行器</a></li>
+				<li><a href="ships.html" class="nav-item">舰船舰艇</a></li>
+				<li><a href="firearms.html" class="nav-item" id="active">枪械与单兵</a></li>
+				<li><a href="armor.html" class="nav-item">坦克装甲车辆</a></li>
+				<li><a href="artillery.html" class="nav-item">火炮</a></li>
+				<li><a href="#" class="nav-item">导弹武器</a></li>
+				<li><a href="#" class="nav-item">爆炸物</a></li>
+			</ul>
+			<ul class="fr">
+				<li>
+					<input type="search" id="input" class="input" placeholder="请输入您要搜索的内容">
+					<button onclick="">搜索</button>
+				</li>
+				<li>
+					<a href=""></a>
+				</li>
+				<li>
+					<a href="user.html">登录</a>
+				</li>
+			</ul>
+		</nav>
+	</header>>
+	<div style="width: 100%">
+		<div class="items items-mobile">
+			<div class="center">
+				<div class="item item-1 animated hidden" ani-name="fadeInUp" ani-delay=".4s">
+					<div class="transition flex-col box">
+						<p class="item-title">狙击枪</p>
+						<div class="img-block">
+							<img src="images/firearms/8.jpg">
+						</div>
+						<p class="item-p">射击精度高<br>距离远</p>
+						<div class="item-btn">
+							<a href="details.html" class="transition item-btn-a" target="_blank">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item-2 animated hidden" ani-name="fadeInDown" ani-delay=".4s">
+					<div class="transition flex-col box">
+						<p class="item-title">自动步枪</p>
+						<div class="img-block">
+							<img src="images/firearms/10.jpg">
+						</div>
+						<p class="item-p">自动进弹<br>连续击发</p>
+						<div class="item-btn">
+							<a href="details.html" class="transition item-btn-a" target="_blank">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item-3 animated hidden" ani-name="fadeInUp" ani-delay=".4s">
+					<div class="transition flex-col box">
+						<p class="item-title">手枪</p>
+						<div class="img-block">
+							<img src="images/firearms/14.jpg">
+						</div>
+						<p class="item-p">短小轻便<br>携带安全</p>
+						<div class="item-btn">
+							<a href="details.html" class="transition item-btn-a" target="_blank">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<div class="item item-4 animated hidden" ani-name="fadeInDown" ani-delay=".4s">
+					<div class="transition flex-col box">
+						<p class="item-title">机枪</p>
+						<div class="img-block">
+							<img src="images/firearms/20.jpg">
+						</div>
+						<p class="item-p">连续射击<br>弹幕射击</p>
+						<div class="item-btn">
+							<a href="details.html" class="transition item-btn-a" target="_blank">了解更多</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="scroll" id="scrollbox" onMouseMove="MoveDiv(event);" onMouseOut="MoveOutDiv();">
+					<div id="scrollcon" style="width:100%;">
+						<table>
+							<tbody>
+								<tr>
+									<td valign="top">
+										<table width="100%">
+											<tr>
+												<td><a href="javascript:;" target="_blank"><img height="150" width="250"
+															alt="" src="images/firearms/1.jpg" /></a></td>
+												<td><a href="javascript:;" target="_blank"><img height="150" width="250"
+															alt="" src="images/firearms/2.jpg" /></a></td>
+												<td><a href="javascript:;" target="_blank"><img height="150" width="250"
+															alt="" src="images/firearms/3.jpg" /></a></td>
+												<td><a href="javascript:;" target="_blank"><img height="150" width="250"
+															alt="" src="images/firearms/4.jpg" /></a></td>
+												<td><a href="javascript:;" target="_blank"><img height="150" width="250"
+															alt="" src="images/firearms/12.jpg" /></a></td>
+												<td><a href="javascript:;" target="_blank"><img height="150" width="250"
+															alt="" src="images/firearms/9.jpg" /></a></td>
+												<td><a href="javascript:;" target="_blank"><img height="150" width="250"
+															alt="" src="images/firearms/7.jpg" /></a></td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<div id="scrollcopy" style="width:100%;"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="width: 100%;">
+		<div class="pro_recommend">
+			<h2 style="color: rgb(41, 41, 36);padding-top: 20px">战争利器--狙击枪</h2>
+			<ul>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-imgs" src="images/firearms/timg (1).jpg">
+						<div class="item-text">
+							<strong>狙击枪</strong>
+							<p>一种用于杀伤近距离重要</br>单个有生目标的高精度步枪</p>
+						</div>
+						<i class="i-p-hot"></i>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/6.jpg">
+						<div class="item-texts">
+							<strong>狙击枪</strong>
+							<p>一种用于杀伤近距离重要</br>单个有生目标的高精度步枪</p>
+
+						</div>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/4.jpg">
+						<div class="item-text">
+							<strong>M65</strong>
+							<p>芬兰</p>
+							<span>查看详情</span>
+						</div>
+						<i class="i-p-new"></i>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/7.jpg">
+						<div class="item-text">
+							<strong>SSG69</strong>
+							<p>奥地利</p>
+							<span>查看详情</span>
+						</div>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/8.jpg">
+						<div class="item-text">
+							<strong>FR-F1</strong>
+							<p>法国</p>
+							<span>查看详情</span>
+						</div>
+						<i class="i-p-free"></i>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/9.jpg">
+						<div class="item-text">
+							<strong>PSG -1</strong>
+							<p>德国</p>
+							<span>查看详情</span>
+						</div>
+
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div style="width: 100%;">
+		<div class="pro_recommend">
+			<h2 style="color: rgb(41, 41, 36);padding-top: 20px">战争利器--自动步枪</h2>
+			<ul>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-imgs" src="images/firearms/6.jpg">
+						<div class="item-text">
+							<strong>自动步枪</strong>
+							<p>一种用于杀伤近距离重要</br>单个有生目标的高精度步枪</p>
+						</div>
+						<i class="i-p-hot"></i>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/timg (1).jpg">
+						<div class="item-texts">
+							<strong>自动步枪</strong>
+							<p>一种用于杀伤近距离重要</br>单个有生目标的高精度步枪</p>
+
+						</div>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/10.jpg">
+						<div class="item-text">
+							<strong>AK-12</strong>
+							<p>苏/俄</p>
+							<span>查看详情</span>
+						</div>
+						<i class="i-p-new"></i>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/11.jpg">
+						<div class="item-text">
+							<strong>81式</strong>
+							<p>中国</p>
+							<span>查看详情</span>
+						</div>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/12.jpg">
+						<div class="item-text">
+							<strong>M4卡宾</strong>
+							<p>美国</p>
+							<span>查看详情</span>
+						</div>
+						<i class="i-p-free"></i>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/13.jpg">
+						<div class="item-text">
+							<strong>日本64式</strong>
+							<p>日本</p>
+							<span>查看详情</span>
+						</div>
+
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div style="width: 100%;">
+		<div class="pro_recommend">
+			<h2 style="color: rgb(41, 41, 36);padding-top: 20px">战争利器--手枪</h2>
+			<ul>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-imgs" src="images/firearms/timg (1).jpg">
+						<div class="item-text">
+							<strong>手枪</strong>
+							<p>一种用于杀伤近距离重要</br>单个有生目标的高精度步枪</p>
+						</div>
+						<i class="i-p-hot"></i>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/6.jpg">
+						<div class="item-texts">
+							<strong>手枪</strong>
+							<p>一种用于杀伤近距离重要</br>单个有生目标的高精度步枪</p>
+
+						</div>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/14.jpg">
+						<div class="item-text">
+							<strong>勃朗宁</strong>
+							<p>美国</p>
+							<span>查看详情</span>
+						</div>
+						<i class="i-p-new"></i>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/15.jpg">
+						<div class="item-text">
+							<strong>雅利金</strong>
+							<p>苏/俄</p>
+							<span>查看详情</span>
+						</div>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/16.jpg">
+						<div class="item-text">
+							<strong>67式</strong>
+							<p>中国</p>
+							<span>查看详情</span>
+						</div>
+						<i class="i-p-free"></i>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/17.jpg">
+						<div class="item-text">
+							<strong>沙漠之鹰</strong>
+							<p>以色列</p>
+							<span>查看详情</span>
+						</div>
+
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div style="width: 100%;">
+		<div class="pro_recommend">
+			<h2 style="color: rgb(41, 41, 36);padding-top: 20px">战争利器--机枪</h2>
+			<ul>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-imgs" src="images/firearms/6.jpg">
+						<div class="item-text">
+							<strong>机枪</strong>
+							<p>一种用于杀伤近距离重要</br>单个有生目标的高精度步枪</p>
+						</div>
+						<i class="i-p-hot"></i>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/timg (1).jpg">
+						<div class="item-texts">
+							<strong>机枪</strong>
+							<p>一种用于杀伤近距离重要</br>单个有生目标的高精度步枪</p>
+
+						</div>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/18.jpg">
+						<div class="item-text">
+							<strong>HK13式</strong>
+							<p>德国</p>
+							<span>查看详情</span>
+						</div>
+						<i class="i-p-new"></i>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/19.jpg">
+						<div class="item-text">
+							<strong>内格夫轻</strong>
+							<p>以色列</p>
+							<span>查看详情</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/20.jpg">
+						<div class="item-text">
+							<strong>M2勃朗宁</strong>
+							<p>美国</p>
+							<span>查看详情</span>
+						</div>
+						<i class="i-p-free"></i>
+
+					</a>
+				</li>
+				<li>
+					<a href="details.html" class="goods-li-a" target="_blank">
+						<img class="item-img" src="images/firearms/21.jpg">
+						<div class="item-text">
+							<strong>RPK</strong>
+							<p>苏/俄</p>
+							<span>查看详情</span>
+						</div>
+
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+	<script src="js/firearms.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/footer.js"></script>
+</body>
+
+</html>

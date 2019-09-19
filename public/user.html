@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>登陆</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/user.css">
+	<style type="text/css">
+		.cavs {
+			z-index: 1;
+			position: fixed;
+			width: 95%;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	</style>
+</head>
+
+<body style="position: relative">
+	<header id="header">
+		<nav class="nav">
+			<ul class="fl">
+				<li>
+					<a href="index.html">
+						<img src="images/logo.png" style="width: 60px;height:60px;">
+					</a>
+				</li>
+				<li><a href="index.html" class="nav-item">首页</a></li>
+				<li><a href="aerocraft.html" class="nav-item">飞行器</a></li>
+				<li><a href="ships.html" class="nav-item">舰船舰艇</a></li>
+				<li><a href="firearms.html" class="nav-item">枪械与单兵</a></li>
+				<li><a href="armor.html" class="nav-item">坦克装甲车辆</a></li>
+				<li><a href="artillery.html" class="nav-item">火炮</a></li>
+				<li><a href="#" class="nav-item">导弹武器</a></li>
+				<li><a href="#" class="nav-item">爆炸物</a></li>
+			</ul>
+			<ul class="fr">
+				<li>
+					<input type="search" id="input" class="input" placeholder="请输入您要搜索的内容">
+					<button onclick="">搜索</button>
+				</li>
+				<li>
+					<a href=""></a>
+				</li>
+				<li>
+					<a href="user.html" id="active">登录</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<canvas class="cavs"></canvas>
+	<div id="templatemo_banner_slide" class="container_wapper">
+		<div class="camera_wrap camera_emboss" id="camera_slide">
+			<!-- 背景图片 -->
+			<div data-src="images/user/banner_slide_01.jpg"></div>
+			<div data-src="images/user/banner_slide_02.jpg"></div>
+			<div data-src="images/user/banner_slide_03.jpg"></div>
+			<div data-src="images/user/banner_slide_04.jpg"></div>
+			<div data-src="images/user/banner_slide_05.jpg"></div>
+		</div>
+	</div>
+	<div id="banner">
+		<div id="login">
+			<h1>用户登录</h1>
+			<p>
+				用户名：
+				<input type="text" id="uname" placeholder="用户名" onblur="out_luname_msg()">
+				<br>
+				<span id="ln_msg"></span>
+			</p>
+			<p>
+				密&nbsp;&nbsp;&nbsp;码：
+				<input type="password" id="upwd" placeholder="密码" onblur="out_lupwd_msg()">
+				<br />
+				<span id="lp_msg"></span>
+			</p>
+			<div class="group">
+				<div class="container">
+					<div id="captcha" style="position: relative" data-type="password"></div>
+				</div>
+			</div>
+			<p>
+				<button onclick="user_login()" id="tlogin">登 录</button>
+				<br />
+				<span id="login_msg"></span>
+				<br />
+			</p>
+			<p>
+				<button onclick="loginreg()" id="loginreg">注 册</button>
+			</p>
+			<p>
+				<a href="javascript:;">忘记密码？</a>
+			</p>
+		</div>
+		<div id="reg">
+			<h1>用户注册</h1>
+			<p>
+				用户名：
+				<input type="text" id="runame" placeholder="用户名3~8位" onfocus="runame_msg()" onblur="out_runame_msg()" />
+				<br />
+				<span id="rn_msg"></span>
+			</p>
+			<p>
+				密&nbsp;&nbsp;&nbsp;码：
+				<input type="password" id="rupwd" placeholder="密码6~12位" onfocus="rupwd_msg()" onblur="out_rupwd_msg()">
+				<br />
+				<span id="rp_msg"></span>
+			</p>
+			<p>
+				验证码：
+				<input type="text" id="text" placeholder="验证码为4位" onfocus="into()" onblur="outto()">
+				<br /><br>
+				<span id="discode"></span>
+				<button onclick="change()">换一换</button>
+				<span id="text_msg"></span>
+			</p>
+			<p>
+				<button onclick="user_reg()" id="jreg">注 册</button>
+			</p>
+			<p>
+				<button onclick="reglogin()" id="reglogin">登 录</button>
+			</p>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/camera.min.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/user.js"></script>
+</body>
+
+</html>

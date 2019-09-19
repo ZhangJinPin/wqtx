@@ -1,0 +1,50 @@
+#footer {
+	width: 100%;
+	height: 70px;
+	overflow: hidden;
+	background: #111;
+	margin-top: 0px!important;
+	padding: 0px!important;
+}
+
+#footer>#div {
+	width: 1000px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	color: #FFF;
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+}
+
+#footer>#div>a {
+	color: #b0b0b0;
+}
+
+#footer>#coop {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #b0b0b0;
+}
+
+#footer>#coop a {
+	color: #b0b0b0;
+	margin: 0 0 0 10px;
+}
+#top{
+	width: 50px;
+	height: 50px;
+	background: #000000;
+	position: fixed;
+	bottom: 75px;
+	right: 0px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 15px;
+}
+#top>a{
+	font-size: 1.2rem;
+	color: #FFF;
+}

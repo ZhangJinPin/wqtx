@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/header.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<title>首页</title>
+</head>
+
+<body>
+	<header id="header">
+		<nav class="nav">
+			<ul class="fl">
+				<li>
+					<a href="index.html">
+						<img src="images/logo.png" style="width: 60px;height:60px;">
+					</a>
+				</li>
+				<li><a href="index.html" class="nav-item" id="active">首页</a></li>
+				<li><a href="aerocraft.html" class="nav-item">飞行器</a></li>
+				<li><a href="ships.html" class="nav-item">舰船舰艇</a></li>
+				<li><a href="firearms.html" class="nav-item">枪械与单兵</a></li>
+				<li><a href="armor.html" class="nav-item">坦克装甲车辆</a></li>
+				<li><a href="artillery.html" class="nav-item">火炮</a></li>
+				<li><a href="#" class="nav-item">导弹武器</a></li>
+				<li><a href="#" class="nav-item">爆炸物</a></li>
+			</ul>
+			<ul class="fr">
+				<li>
+					<input type="search" id="input" class="input" placeholder="请输入您要搜索的内容">
+					<button onclick="">搜索</button>
+				</li>
+				<li>
+					<a href=""></a>
+				</li>
+				<li>
+					<a href="user.html">登录</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="bannerbox">
+
+		<div class="Homebanner">
+			<ul>
+				<li class="Load cur" style="z-index:99">
+					<img src="images/index/df26.jpg" alt="">
+					<div class="Homebannertext">
+						<img src="images/index/df26.jpg" class="bannereffect bannertime bigimg">
+						<dl class="bannerone clearfix">
+							<dt class="bannereffect bannertime1">
+								东风系列--国之骄傲
+							</dt>
+							<dd class="bannereffect bannertime2">
+								为梦想而前进
+							</dd>
+						</dl>
+					</div>
+				</li>
+				<li class="Load">
+					<img src="images/index/nmzji(1).jpg" alt="">
+					<div class="Homebannertext">
+						<img src="images/index/nmzji(1).jpg" class="bannereffect bannertime bigimg">
+						<dl class="bannertwo clearfix">
+							<dt class="bannereffect bannertime1">
+								<h3>征服海洋</h3>
+								<p>乘风破浪会有时 直挂云帆济沧海</p>
+							</dt>
+						</dl>
+					</div>
+				</li>
+				<li class="Load"><img src="images/index/F35(1).jpg" alt="">
+					<div class="Homebannertext">
+						<dl class="bannerthree clearfix">
+							<dt class="bannereffect bannertime"><img src="images/index/F35a.jpg" alt=""></dt>
+							<dd class="bannereffect bannertime1">
+								<h3>翱翔于天地</h3>
+								<p>大地将匍匐在我的脚下</p>
+							</dd>
+						</dl>
+					</div>
+				</li>
+			</ul>
+			<div class="Homeleft">
+				<</div> <div class="Homeright">>
+			</div>
+			<div class="Homedot"><a href="javascript:;" class="cur">1</a><a href="javascript:;">2</a><a
+					href="javascript:;">3</a></div>
+		</div>
+
+
+		<div class="index_btn">
+			<ul>
+				<li><span><a href="#"><em class="btn">飞行器</em></a></span>
+					<div class="index_btnbox index_btnanli" style="top: 0px;">
+						<img src="images/aerocraft/aerocraft4.jfif" alt="战斗机" width="258" height="112">
+						<p class="clearfix">
+							<a href="#">战斗机</a>
+							<a href="#">直升机</a>
+							<a href="#">无人机</a>
+							<a href="#">运输机</a>
+						</p>
+					</div>
+				</li>
+				<li><span><a href="#"><em class="btn1">舰艇</em></a></span>
+					<div class="index_btnbox">
+						<img src="images/ships/1-1.jpg" alt="" width="258" height="112">
+						<p class="clearfix">
+							<a href="#">驱逐舰</a>
+							<a href="#">航空母舰</a>
+							<a href="#">潜艇</a>
+							<a href="#">护卫舰</a>
+						</p>
+					</div>
+				</li>
+				<li><span><a href="#"><em class="btn2">单兵作战</em></a></span>
+					<div class="index_btnbox">
+						<img src="images/firearms/9.jpg" alt="" width="258" height="112">
+						<p class="clearfix">
+							<a href="#" title="">自动步枪</a>
+							<a href="#" title="">狙击枪</a>
+							<a href="#" title="">手枪</a>
+							<a href="#" title="">机枪</a>
+						</p>
+					</div>
+				</li>
+				<li><span><a href="#" class="cur"><em class="btn3">我们的实力</em></a></span>
+					<div class="index_btnbox">
+						<img src="images/ships/1-1.jpg" alt="我们的实力" width="258" height="112">
+						<p class="clearfix">
+							<a href="#" title="军事论坛">军事论坛</a>
+							<a href="#" title="军用装备">军用装备</a>
+							<a href="#" title="军队文化">军队文化</a>
+							<a href="#" title="军品图书">军品图书</a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$(".index_btn li").hover(function () {
+				$(this).find("div").stop(true).animate({ top: -280 }, 300);
+			}, function () {
+				$(this).find("div").stop(true).animate({ top: -0 }, 300);
+			});
+
+		});
+	</script>
+
+
+
+	</div>
+	<!-- 中	 -->
+	<div style="width: 100%;height:840px;background:red;">
+		<div class="section section-news" id="section-news">
+			<div class="section-title">
+				<h1>军事资料</h1>
+				<h2>军事前沿、武器资讯、战争热点、24小时更新不停</h2>
+			</div>
+			<div class="section-wrapper">
+				<div class="news-body">
+					<div class="news-main">
+						<a class="news-main-card" href="#">
+							<div class="news-main-card-bg" style="background-image: url(images/index/indexbgtp.jpg)">
+							</div>
+							<div class="news-main-card-bg news-main-card-bg-mb"
+								style="background-image: url(images/index/bg111.jpg)"></div>
+							<div class="news-main-card-top">
+								<div class="news-play-btn">
+									<span class="cui-icon cui-icon-play"></span>
+								</div>
+							</div>
+							<div class="news-main-card-bottom">
+								<h2 class="h2">【直播】狙击手全身而退--人质炸弹</h2>
+								<p class="p">
+									一名持有武器，劫持了人质，同时又带有松发引信炸弹的歹徒，正要登车驶向人口密集的地方。击毙他，人质也会送命，让他逃脱，更多的无辜群众危在旦夕，特警狙击手面对如此艰难的局面如何做
+								</p>
+								<div class="sub-p sub-p-date">9月14日 16:00-18:00</div>
+								<div class="sub-p sub-p-author">权威军事家解析海湾战争</div>
+								<div class="btn-group">
+									<span class="cui-btn cui-btn-small cui-btn-outline-light"><span
+											class="cui-icon cui-icon-play"></span><span>观看视频</span></span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="news-sub">
+
+						<ul class="news-list-v show">
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">The Reaper，代号死神</h3>
+									<p class="p">一名最致命的特别行动狙击手的自传（序）</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">四〇〇高地攻坚战：美国陆军游骑兵对决德国空降猎兵</h3>
+									<p class="p">1944年12月5日，在德国的许特根森林，一名深陷惨烈战斗的美国士兵</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">弹道学——子弹速度的测量</h3>
+									<p class="p">1970年10月份发行的Guns & Ammo杂志William L. Casteel所撰写的“子弹飞得有多快？而你又是怎么知道的？”</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3"> （连载）美国海军陆战队·美国特种作战司令部第一分遣队：第五章 - 猎杀HVT的 “常态行动”</h3>
+									<p class="p">在本章，人</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">左轮的复兴</h3>
+									<p class="p">新的型号让左轮手枪重回每日携行（EDC）的复兴之路。Smith & Wesson, Colt, Ruger </p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+						</ul>
+
+						<ul class="news-list-v">
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">带着canvas去流浪系列之一：绘制柱状图</h3>
+									<p class="p">学习使用canvasAPI来实现数据可视化。</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">眼镜蛇行动： CIA情报官在古巴发展情报网并率先发现前苏联部署导弹的幕后故事</h3>
+									<p class="p">直到最后，汤姆•休伊特似乎都坚持母校商船学院的校训：“行而不言”。</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">A特遣队（DETACHMENT A）:从柏林到伊朗的秘密特战任务</h3>
+									<p class="p">这个单位被称为A特遣队（Detachment A ，简称Det
+										A），当时的正式编制名称是第39特种部队作战分队(SFOD)，这是一支秘密的特种部队。</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">波希米亚风新时代模块化红杏——CZ805 Bren</h3>
+									<p class="p"> 总的来说，。</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">水管工的杰作——国产85式冲锋枪</h3>
+									<p class="p">在二战中，英国的司登冲锋枪因其简陋的外形和较低的可靠性，</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+						</ul>
+
+						<ul class="news-list-v">
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">美国休斯顿政府宣传片：《当恐怖袭击来临时》</h3>
+									<p class="p">想过突然有一天枪口对准你吗？想过突然有一天手臂长的砍刀即将砍</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">世界十大名枪之一的92式手枪现形记</h3>
+									<p class="p">作者是加拿大华裔警察，3年前的视频，</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">阿富汗战争中的第75游骑兵团</h3>
+									<p class="p">阿富汗战争中的游骑兵团都</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">是军国主义复辟还是文化传统坚持？——聊聊日本自卫队的旗帜</h3>
+									<p class="p">什么时候才能够直面历史的旧疮疤，让历史不再重演？什么时候才</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="news-list-card">
+									<h3 class="h3">丹麦特种部队在阿富汗的化装侦察</h3>
+									<p class="p">ip命令作为Linux网络控制的魔法棒，是未来遨游云网</p>
+									<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+								</a>
+							</li>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class="section-bottom">
+				<div class="section-more-wrap">
+					<a class="news-more" href="#">
+						<span>更多新鲜动态</span><i class="cui-icon cui-icon-more"></i>
+					</a>
+					<a class="news-change">
+						<span>换一换</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			// 换一换
+			var $newsLists = $('.news-sub').find('.news-list-v');
+
+			function changeNews() {
+				var $currentNews = $newsLists.filter('.show');
+				var $nextNews = $currentNews.next();
+
+				if ($nextNews.length === 0) {
+					$nextNews = $newsLists.eq(0);
+				}
+
+				$newsLists.removeClass('show');
+				$nextNews.addClass('show');
+			}
+			$('.news-change').on('click', function () {
+				changeNews();
+			});	
+		</script>
+	</div>
+	<!-- 尾 -->
+	<div id="sfq">
+		<div class="bg bg-box-1"></div>
+		<div class="bg bg-box-2"></div>
+		<div class="bg bg-box-3"></div>
+		<div class="bg bg-box-4"></div>
+		<div id="wrap">
+			<ul>
+				<li>
+					<div class="text">
+						<p>洲际导弹</p>
+					</div>
+				</li>
+				<li>
+					<div class="text">
+						<p>战斗飞机</p>
+					</div>
+				</li>
+				<li>
+					<div class="text">
+						<p>航空母舰</p>
+					</div>
+				</li>
+				<li class="curr">
+					<div class="text">
+						<p>装甲坦克</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<footer id="footer"></footer>
+	<script src="js/footer.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/banner.js"></script>
+</body>
+
+</html>
